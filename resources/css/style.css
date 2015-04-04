@@ -9,3 +9,8 @@ body {
 .save {
   background-color: #006700;
 }
+.separator {
+  border-top: 1px solid #8d7168;
+  width: 100%;
+  padding: 0.5em;
+}
