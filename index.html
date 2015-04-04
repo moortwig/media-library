@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="mediaLibrary">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,10 +13,11 @@
 
   <!-- JavaScript -->
   <script src="resources/js/vendor/modernizr.js"></script>
+
 </head>
 <body>
   
-  <div class="">    
+  <div ng-controller="LibraryController">    
     <div class="row">
       <div class="large-12 columns">
         <h1>Media Library</h1>
@@ -95,6 +96,7 @@
 </div><!-- . -->
 
   <script src="resources/js/vendor/jquery.js"></script>
+  <script src="resources/js/vendor/angular.min.js"></script>
   <script src="resources/js/vendor/foundation.min.js"></script>
   <script>
     $(document).foundation();
