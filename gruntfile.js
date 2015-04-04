@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 					paths: ["resources/css"]
 				},
 				files: {
-					"resources/css/style.css": "resources/less/style.less"
+					"resources/css/style.css": "resources/less/main.less"
 				}
 			},
 			production: {
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 				}
 			},
 			files: {
-				"resources/css/style.css": "resources/less/style.less"
+				"resources/css/style.css": "resources/less/main.less"
 				}
 			}
 		}
