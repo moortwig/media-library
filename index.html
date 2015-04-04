@@ -28,22 +28,22 @@
 
             <div class="row">
               <div class="medium-3 columns">
-                <input type="text" placeholder="Title">
+                <input type="text" ng-model="title" placeholder="Title">
               </div>
               <div class="medium-3 columns">
-                <input type="text" placeholder="Author">
+                <input type="text" ng-model="author" placeholder="Author">
               </div>
               <div class="medium-3 columns">
-                <input type="text" placeholder="Series">
+                <input type="text" ng-model="series" placeholder="Series">
               </div>
               <div class="medium-3 columns">
-                <input type="text" placeholder="Language">
+                <input type="text" ng-model="language" placeholder="Language">
               </div>
             </div><!-- .row -->
 
             <div class="row">
               <div class="small-12 medium-5 large-5 columns">
-                <input type="text" placeholder="ISBN">
+                <input type="text" ng-model="isbn" placeholder="ISBN">
               </div>
 
 
@@ -54,7 +54,7 @@
 
                   <div class="small-4 medium-4 columns">
                     <div class="switch small centered">
-                      <input type="checkbox" name="format" value="isPocket" id="isPocket"><label for="isPocket"></label>
+                      <input type="checkbox" name="format" ng-model="isPocket" value="isPocket" id="isPocket"><label for="isPocket"></label>
                     </div>
                   </div>
 
@@ -64,7 +64,7 @@
               </div>
 
               <div class="small-2 large-2 columns">
-                <button class="button tiny save">Save</button>
+                <button ng-click="saveBook()" class="button tiny save">Save</button>
               </div>
             </div><!-- .row -->
           </form>
