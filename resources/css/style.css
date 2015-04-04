@@ -14,3 +14,18 @@ body {
   width: 100%;
   padding: 0.5em;
 }
+.centered {
+  margin: 0 auto;
+  width: 50%;
+}
+/*.switch {
+	.small { 
+		label {
+			width: 5em;
+		}
+	}
+}*/
+/* Debugging */
+.columns {
+  /*outline: 1px solid red;*/
+}
