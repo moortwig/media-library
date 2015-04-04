@@ -1,5 +1,11 @@
 /* Backgrounds */
 /* Text */
 body {
-  background-color: #000000;
+  background-color: #f8f8f8;
+}
+.panel {
+  background-color: #aac9bc;
+}
+.save {
+  background-color: #006700;
 }
