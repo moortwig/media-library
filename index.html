@@ -13,11 +13,12 @@
 
   <!-- JavaScript -->
   <script src="resources/js/vendor/modernizr.js"></script>
+  <script src="resources/js/vendor/angular.min.js"></script>
 
 </head>
 <body>
   
-  <div ng-controller="LibraryController">    
+  <div ng-controller="BookController">    
     <div class="row">
       <div class="large-12 columns">
         <h1>Media Library</h1>
@@ -28,22 +29,22 @@
 
             <div class="row">
               <div class="medium-3 columns">
-                <input type="text" ng-model="title" placeholder="Title">
+                <input type="text" placeholder="Title">
               </div>
               <div class="medium-3 columns">
-                <input type="text" ng-model="author" placeholder="Author">
+                <input type="text" placeholder="Author">
               </div>
               <div class="medium-3 columns">
-                <input type="text" ng-model="series" placeholder="Series">
+                <input type="text" placeholder="Series">
               </div>
               <div class="medium-3 columns">
-                <input type="text" ng-model="language" placeholder="Language">
+                <input type="text" placeholder="Language">
               </div>
             </div><!-- .row -->
 
             <div class="row">
               <div class="small-12 medium-5 large-5 columns">
-                <input type="text" ng-model="isbn" placeholder="ISBN">
+                <input type="text" placeholder="ISBN">
               </div>
 
               <div class="small-9 medium-5 large-5 columns">
@@ -51,7 +52,7 @@
                   <div class="small-5 medium-4 columns text-right">Hardcover</div>
                   <div class="small-3 medium-4 columns">
                     <div class="switch tiny centered">
-                      <input type="checkbox" name="format" ng-model="isPocket" value="isPocket" id="isPocket"><label for="isPocket"></label>
+                      <input type="checkbox" name="format" value="isPocket" id="isPocket"><label for="isPocket"></label>
                     </div>
                   </div>
                   <div class="small-4 medium-4 columns">Pocket</div>
@@ -59,7 +60,7 @@
               </div>
 
               <div class="small-3 large-2 columns">
-                <button ng-click="saveBook()" class="button tiny save">Save</button>
+                <button class="button tiny save">Save</button>
               </div>
             </div><!-- .row -->
           </form>
@@ -84,16 +85,25 @@
             </div>
           </div><!-- .row -->
 
-
+          <div>
+            {{ hello }}
+            <div ng-repeat="book in books">
+              <span class="book-title">{{book.title}}</span>
+              <span class="book-author">{{book.author}}</span>
+            </div>
+          </div>
       </div><!-- .large-12 columns -->
     </div><!-- .row -->
 
 </div><!-- . -->
 
   <script src="resources/js/vendor/jquery.js"></script>
-  <script src="resources/js/vendor/angular.min.js"></script>
   <script src="resources/js/vendor/foundation.min.js"></script>
   <script src="resources/js/app.js"></script>
+
+  <script src="resources/js/controllers/BookController.js"></script>
+  <script src="resources/js/classes/Media.js"></script>
+  <script src="resources/js/classes/Book.js"></script>
   <script>
     $(document).foundation();
   </script>
