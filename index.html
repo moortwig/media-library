@@ -77,21 +77,21 @@
 
           <!-- Data -->
           <div class="row">
+
             <div class="small-6 medium-5 medium-offset-2 columns">
               <h3>Title</h3>
+              <div ng-repeat="book in books">
+                <span class="book-title">{{book.title}}</span>
+              </div>
             </div>
+
             <div class="small-6 medium-5 columns">
               <h3>Author</h3>
+              <div ng-repeat="book in books">
+                <span class="book-author">{{book.author}}</span>
+              </div>
             </div>
           </div><!-- .row -->
-
-          <div>
-            {{ hello }}
-            <div ng-repeat="book in books">
-              <span class="book-title">{{book.title}}</span>
-              <span class="book-author">{{book.author}}</span>
-            </div>
-          </div>
       </div><!-- .large-12 columns -->
     </div><!-- .row -->
 
