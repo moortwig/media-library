@@ -16,7 +16,7 @@ body {
 }
 .centered {
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
 }
 /*.switch {
 	.small { 
@@ -27,5 +27,5 @@ body {
 }*/
 /* Debugging */
 .columns {
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
